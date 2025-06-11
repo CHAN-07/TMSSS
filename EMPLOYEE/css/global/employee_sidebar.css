@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: #f4f4f4;
+    display: flex;
+    overflow-x: hidden;
+  }
+  
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+  }
+  
+  .loglogo{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    bottom: 160px;
+  }
+  
+  
+  .sidebarh2 {
+    font-family: 'Baloo Bhai 2', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-top: 5px;
+    margin-left: 10px;
+    position: absolute;
+  }
+  
+  .sidebar-header {
+    width: 20px;
+    height: 80px;  
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar ul li {
+    padding: 15px;
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-left: 38px;
+  }
+  
+  .sidebar ul li:hover,
+  .sidebar ul li.active {
+    background-color: #333;
+  }
+  
+  .logout {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-align: center;
+  }
+  
+  .logout-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #f44336;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    bottom: 158px;
+    left: 55px;
+    position: absolute;
+  }
+  
+  
+  /*sidebar logo*/
+  .fasfa-user-circle {
+    font-size: 16px;
+    color: white;
+    bottom: 200px;
+    left: 65px;
+    position: absolute;
+  }
+  
+  .dashboard {
+    width: 25px;
+    height: 25px;
+    margin-top: 105px;
+    margin-left: 20px;
+    position: absolute;
+  }
+  
+  .menu {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 170px;
+    position: absolute; 
+  }
+  
+  .userni {
+    width: 25px;
+    height: 25px;
+    margin-top: 170px;
+    margin-left: 20px;
+    position: absolute;
+  }
+  
+  .roleni {
+    width: 25px;
+    height: 25px;
+    margin-top: 235px;
+    margin-left: 20px;
+    position: absolute;
+  }
+  
+  .department {
+    width: 25px;
+    height: 25px;
+    margin-top: 300px;
+    margin-left: 20px;
+    position: absolute;
+  }
+  
+  .profile1 {
+    width: 50px;
+    height: 50px;
+    margin-top: 960px;
+    margin-left: 10px;
+    position: absolute;
+  }

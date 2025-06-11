@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  height: 60px;
+  justify-content: flex-end;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #141414;
+  color: white;
+  
+}
+
+.bell {
+  width: 40px;
+  height: 40px;
+  left: 1675px;
+  margin-top: 4px;
+  margin-right: 30px;
+}
+
+.message {
+  width: 35px;
+  height: 35px;
+  left: 1750px;
+  margin-top: 5px;
+  margin-right: 40px;
+}

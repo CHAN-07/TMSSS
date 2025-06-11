@@ -1,0 +1,387 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Baloo Bhai 2', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  overflow-x: hidden;
+}
+
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #111;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.loglogo{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 20px;
+  bottom: 160px;
+}
+
+
+.sidebarh2 {
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-size: 40px;
+  color: white;
+  margin-top: 5px;
+  margin-left: 10px;
+  position: absolute;
+}
+
+.sidebar-header {
+  width: 20px;
+  height: 80px;  
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-left: 38px;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  background-color: #333;
+}
+
+.logout {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-align: center;
+}
+
+.logout-btn {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: #f44336;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  bottom: 158px;
+  left: 55px;
+  position: absolute;
+}
+
+
+/*sidebar logo*/
+.fasfa-user-circle {
+  font-size: 16px;
+  color: white;
+  bottom: 200px;
+  left: 65px;
+  position: absolute;
+}
+
+.dashboard {
+  width: 25px;
+  height: 25px;
+  margin-top: 105px;
+  margin-left: 20px;
+  position: absolute;
+}
+
+.menu {
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 170px;
+  position: absolute; 
+}
+
+.userni {
+  width: 25px;
+  height: 25px;
+  margin-top: 170px;
+  margin-left: 20px;
+  position: absolute;
+}
+
+.roleni {
+  width: 25px;
+  height: 25px;
+  margin-top: 235px;
+  margin-left: 20px;
+  position: absolute;
+}
+
+.department {
+  width: 25px;
+  height: 25px;
+  margin-top: 300px;
+  margin-left: 20px;
+  position: absolute;
+}
+
+.profile1 {
+  width: 50px;
+  height: 50px;
+  margin-top: 745px;
+  margin-left: 10px;
+  position: absolute;
+}
+
+/* Main Content Styling */
+.content {
+  margin-left: 260px;
+  padding: 20px;
+  width: calc(100% - 260px);
+}
+
+/*header*/
+.header {
+  display: flex;
+  height: 60px;
+  justify-content: flex-end;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #141414;
+  color: white;
+  
+}
+
+.bell {
+  width: 40px;
+  height: 40px;
+  left: 1675px;
+  margin-top: 4px;
+  margin-right: 30px;
+}
+
+.message {
+  width: 35px;
+  height: 35px;
+  left: 1750px;
+  margin-top: 5px;
+  margin-right: 40px;
+}
+
+.user-list {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1510px;
+    margin: 30px auto;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow-x: auto;
+  }
+
+.scrollable-content {
+  max-height: 500px;
+  overflow-y: auto;
+}
+  
+  .user-list h2 {
+    margin-bottom: 3px;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  /* Table styling */
+  .user-list table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .user-list th,
+  .user-list td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  .user-list th {
+    background-color: #f5f5f5;
+    color: #444;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .user-list tr:not(:first-child):hover {
+    background-color: #fafafa;
+  }
+  
+  .user-list td {
+    border-top: 1px solid #eee;
+    color: #333;
+  }
+  
+  /* Action links */
+  .user-list a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: 500;
+    row-gap: 10px;
+  }
+  
+  .user-list a[href*="edit"] {
+    background-color: #4caf50;
+    color: white;
+    display: flex;
+  }
+  
+  .user-list a[href*="delete"] {
+    background-color: #f44336;
+    color: white;
+    display: flex;
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .user-list table,
+    .user-list thead,
+    .user-list tbody,
+    .user-list th,
+    .user-list td,
+    .user-list tr {
+      display: block;
+    }
+  
+    .user-list th {
+      display: none;
+    }
+  
+    .user-list td {
+      padding: 10px;
+      position: relative;
+      border: none;
+      border-bottom: 1px solid #eee;
+    }
+  
+    .user-list td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      color: #666;
+      display: block;
+      margin-bottom: 4px;
+    }
+  
+    .user-list td:last-child {
+      padding-bottom: 20px;
+    }
+  }
+
+  .bastaword {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 14px;
+    padding-left: 25px;
+    color: #959494;
+}
+
+.bastaword-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: start; 
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ins {
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.adduser {
+    display: flex;
+    gap: 3px;
+    background-color: #474847;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    
+}
+
+.adduser:hover {
+    background-color: #a1a2a1;
+}
+
+.useradd {
+    font-size: 12px;
+    font-weight: 600;
+
+}
+
+.addb {
+    width: 20px;
+    height: 20px;
+}
+
+.ambot {
+    display: flex;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.ambot a {
+    display: inline-flex;
+    background-color: #ffffff;
+    color: rgb(13, 13, 13);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 0;
+    font-size: 12px;
+    font-weight: 600;
+    border: #b1b0b0 1px solid;
+}
+
+.ambot a:hover {
+    background-color: #a1a2a1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: white;
+}

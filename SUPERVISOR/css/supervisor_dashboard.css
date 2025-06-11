@@ -1,0 +1,340 @@
+ .recent-activity-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .hello-admin {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 70px; 
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  /* Dashboard Cards */
+  .dashboard-cards {
+      display: flex;
+      justify-content: start;
+      align-items: left;
+      gap: 30px;
+      margin-top: 20px;
+      margin-left: 100px;
+      flex-wrap: wrap;
+  }
+  
+  .card {
+      background: white;
+      border-radius: 10px;
+      width: 360px;
+      height: 150px;
+      text-align: center;
+      box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+      font-size: 40px;
+      font-weight: bold;
+      padding: 25px;
+      margin-bottom: 20px;
+  }
+  
+  @media (max-width: 900px) {
+      .dashboard-cards {
+          justify-content: center;
+          margin-left: 0;
+          gap: 20px;
+      }
+      .card {
+          width: 90%;
+          height: auto;
+          font-size: 30px;
+          padding: 20px;
+      }
+  }
+  
+  .dashboard-cards h2 {
+      margin-top: -10px;
+      margin-bottom: 10px;
+      font-style: normal;
+      font-weight: 630;
+      font-size: 20px;
+      line-height: 24px;
+      color: #1d1d1d;
+      text-align: left;
+  }
+  
+  .dashboard-cards h3 {
+      margin-top: -15px;
+      margin-bottom: 10px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #AAA6A6;
+      text-align: left;
+  }
+  
+  .dashboard-cards p {
+      text-align: left;
+      font-size: 40px;
+      font-weight: bold;
+      margin-left: 50px;
+      margin-top: -10px;
+  }
+  
+  .card hr {
+      width: 50px;
+      border: 1px solid #AAA6A6;
+      margin-left: 0;
+      margin-bottom: 15px;
+  }
+  
+  .card img {
+      height: 30px;
+      width: 30px;
+      display: block;
+      margin-left: auto;
+      margin-right: 10px;
+      margin-top: -100px;
+  }
+  
+  .box {
+    top: 50px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .word {
+    font-size: 20px;
+    font-weight: bold;
+    color: #282e34;
+    margin-left: 50px;
+    margin-top: 8px;
+  }
+  
+  .minib {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 0;
+  }
+  
+  .box1 {
+    border: 1px solid #ecf0f1;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+    max-width: 550px;
+    left: 20px;
+  }
+  
+  .box1:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  
+  .G, .Eg {
+    color: #7f8c8d;
+    font-size: 14px;
+  }
+  
+  
+  .add {
+    position: absolute;
+    bottom: 200px;
+    right: 200px;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .add:hover {
+    transform: scale(1.1);
+  }
+  
+  .user-role-row {
+  display: flex;
+  justify-content: space-between; /* or flex-start if you want them close */
+  align-items: center;
+  }
+  
+  .top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+  .U {
+  font-weight: bold;
+  font-size: 16px;
+  }
+  
+  .supervisor {
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  }
+  
+  .supervisor img.superb {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  }
+  
+  .S {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  }
+  
+  /* Updated Recent User Activity Panel */
+  .recent-activity-panel {
+    top: 50px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    width: 43%;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .recent-activity-panel2 {
+    top: 50px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    width: 43%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .recent-activity-wrapper img {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+    margin-top: 0;
+  }
+  
+  .recent-activity-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-list {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .recent-activity-panel h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .recent-activity-panel2 h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .activity-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .activity-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-name {
+    font-weight: 500;
+    margin-bottom: 3px;
+    font-size: 14px;
+  }
+  
+  .activity-subtitle {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .activity-action button,
+  .btn-login, 
+  .btn-update {
+    padding: 4px 16px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+    font-size: 12px;
+    min-width: 70px;
+    text-align: center;
+  }
+  
+  .activity-action button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Message Badge Styling */
+  .message-badge {
+    position: absolute;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 50%;
+    min-width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+  
+  /* Notification Badge Styling */
+  .notification-badge {
+    position: absolute;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    min-width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+
+.red {
+  rotate: 45deg;
+}
